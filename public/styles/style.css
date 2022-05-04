@@ -1,0 +1,111 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(204,201,201);
+}
+
+.index-body{
+    background-image: url(/images/spotify-background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-search {
+    background-color: rgba(204, 201, 201, 0.7);
+    height: 150px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    color: rgb(222, 91, 76);
+}
+
+header{
+    padding: 25px 0px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.card-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+    margin: 30px;
+}
+
+.card{
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-image {
+    height: 80%;
+    width: 100%;
+}
+
+.card-text-and-button{
+    height: 20%;
+    width: 100%;
+    background-color: rgba(110, 109, 109, 0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+h3 {
+    color: white;
+}
+
+.view-albums-button,
+.view-tracks-button,
+.index-search-button,
+.homepage-button{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(224, 112, 99);
+    display: flex;
+    align-items: center;
+}
+
+.tracks-row1{
+    margin: 30px 30px 2px 30px;
+    display: flex;
+    justify-content: space-around;
+    gap: 55%;
+    background-color: grey;
+    padding: 20px;
+    font-size: xx-large;
+    color: aliceblue;
+}
+
+.tracks-otherRows {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkgray;
+    margin: 0px 30px 2px 30px;
+    padding: 20px;
+    font-size: x-large;
+    align-items: center;
+}

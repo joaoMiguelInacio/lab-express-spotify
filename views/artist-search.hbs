@@ -1,0 +1,17 @@
+<header>
+    <h1>You searched for:  {{this.searchedArtist}} </h1>
+    <a href="/" class="homepage-button">Search for Something Different</a>
+</header>
+
+<div class="card-grid">
+    {{#each artistsData}}
+        <div class="card">
+            <img src="{{this.images.[0].url}}" class="card-image" alt="{{this.name}} image">
+            <div class="card-text-and-button">
+                <h3>{{this.name}}</h3>
+                <a class="view-albums-button" href="/albums/{{this.id}}">View Albums</a>
+            </div>
+            
+        </div>
+    {{/each}}
+</div>
